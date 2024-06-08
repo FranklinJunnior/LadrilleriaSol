@@ -1,0 +1,33 @@
+/* Estilos para los títulos */
+h2 {
+  color: #333; /* Color del texto */
+  font-size: 24px; /* Tamaño de fuente */
+  margin-top: 20px; /* Margen superior */
+}
+
+/* Estilos para el contenido */
+p {
+  color: #666; /* Color del texto */
+  font-size: 16px; /* Tamaño de fuente */
+  line-height: 1.6; /* Altura de línea */
+}
+
+/* Estilos para la imagen del equipo */
+.img-fluid {
+  width: 100%; /* Ancho máximo */
+  max-height: 400px; /* Altura máxima */
+  margin-top: 20px; /* Margen superior */
+}
+
+
+.custom-img {
+  max-width: 400px; /* Ancho máximo de la imagen */
+  max-height: 400px; /* Altura máxima de la imagen */
+  width: auto;
+  height: auto;
+}
+
+/* Asegura que el título "NOSOTROS" tenga un espacio adecuado encima */
+.col-md-12 h2 {
+  margin-top: 50px;
+}

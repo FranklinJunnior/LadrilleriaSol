@@ -1,0 +1,107 @@
+<!-- src/app/pages/cotizar/cotizar.component.html -->
+<div class="container mt-4">
+  <h1>Cotizar</h1>
+  <form #cotizacionForm="ngForm" (ngSubmit)="onSubmit(cotizacionForm)">
+
+    <h3>Datos Personales</h3>
+    <div class="form-group">
+      <label for="tipoDocumento">Tipo Documento</label>
+      <select class="form-control" id="tipoDocumento" required ngModel name="tipoDocumento">
+        <option value="DNI">DNI</option>
+      </select>
+      <div *ngIf="cotizacionForm.controls['tipoDocumento']?.invalid && cotizacionForm.controls['tipoDocumento']?.touched" class="text-danger">
+        Debe seleccionar un tipo de documento.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="nombre">Nombre*</label>
+      <input type="text" class="form-control" id="nombre" required ngModel name="nombre">
+      <div *ngIf="cotizacionForm.controls['nombre']?.invalid && cotizacionForm.controls['nombre']?.touched" class="text-danger">
+        Debe ingresar su nombre.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="apellidos">Apellidos*</label>
+      <input type="text" class="form-control" id="apellidos" required ngModel name="apellidos">
+      <div *ngIf="cotizacionForm.controls['apellidos']?.invalid && cotizacionForm.controls['apellidos']?.touched" class="text-danger">
+        Debe ingresar sus apellidos.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="telefono">Teléfono*</label>
+      <input type="tel" class="form-control" id="telefono" required ngModel name="telefono">
+      <div *ngIf="cotizacionForm.controls['telefono']?.invalid && cotizacionForm.controls['telefono']?.touched" class="text-danger">
+        Debe ingresar su teléfono.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email*</label>
+      <input type="email" class="form-control" id="email" required ngModel name="email">
+      <div *ngIf="cotizacionForm.controls['email']?.invalid && cotizacionForm.controls['email']?.touched" class="text-danger">
+        Debe ingresar su correo electrónico.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="direccionEntrega">Dirección de Entrega*</label>
+      <input type="text" class="form-control" id="direccionEntrega" required ngModel name="direccionEntrega">
+      <div *ngIf="cotizacionForm.controls['direccionEntrega']?.invalid && cotizacionForm.controls['direccionEntrega']?.touched" class="text-danger">
+        Debe ingresar su dirección de entrega.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="fechaEntrega">Fecha de Entrega*</label>
+      <input type="date" class="form-control" id="fechaEntrega" required ngModel name="fechaEntrega">
+      <div *ngIf="cotizacionForm.controls['fechaEntrega']?.invalid && cotizacionForm.controls['fechaEntrega']?.touched" class="text-danger">
+        Debe ingresar la fecha de entrega.
+      </div>
+    </div>
+
+    <!-- Ladrillos para Muro -->
+    <h3>Ladrillos para Muro</h3>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="kingKong">King Kong</label>
+          <img src="assets/imagenes/kingkong.png" class="img-fluid" alt="King Kong" style="height: 200px;" >
+          <input type="number" class="form-control" id="kingKong" ngModel name="kingKong">
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="pandereta">Pandereta </label>
+          <img src="assets/imagenes/pandereta.png" class="img-fluid" alt="Pandereta" style="height: 200px;" >
+          <input type="number" class="form-control" id="pandereta" ngModel name="pandereta">
+        </div>
+      </div>
+    </div>
+
+    <!-- Ladrillos para Techo -->
+    <h3>Ladrillos para Techo</h3>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="techo10">Techo Altura 10</label>
+          <img src="assets/imagenes/techo10.png" class="img-fluid" alt="Techo10" style="height: 200px;">
+          <input type="number" class="form-control" id="bovedilla15" ngModel name="techo10">
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="techo12">Techo Altura 12</label>
+          <img src="assets/imagenes/techo12.png" class="img-fluid" alt="Techo12" style="height: 200px;">
+          <input type="number" class="form-control" id="techo12" ngModel name="techo12" >
+        </div>
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary mx-auto" [disabled]="cotizacionForm.invalid">Enviar</button>
+  </form>
+</div>
