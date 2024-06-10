@@ -42,23 +42,6 @@
 
 
 
-
-/* Estilos para el contenedor principal */
-.container {
-  display: flex;
-  flex-direction: column;
-}
-
-/* Estilos para el encabezado */
-.header {
-  flex-shrink: 0;
-  flex-grow: 0;
-  background: #2f3437;
-  padding: 10px 10px;
-
-
-}
-
 /* Estilos para el contenido */
 .content {
 

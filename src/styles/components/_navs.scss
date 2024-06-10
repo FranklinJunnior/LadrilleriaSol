@@ -1,0 +1,13 @@
+.navs {
+   flex-shrink: 0;
+   flex-grow: 0;
+   background: #2f3437;
+   padding: 10px 10px;
+   color: #fff;
+
+   &__item {
+      margin-right: 10px;
+      color: #fff;
+   }
+
+}
