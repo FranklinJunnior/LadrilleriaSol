@@ -1,3 +1,4 @@
+
 .navs {
    flex-shrink: 0;
    flex-grow: 0;
@@ -8,6 +9,12 @@
    &__item {
       margin-right: 10px;
       color: #fff;
+      
+      @include responsive ($lg){
+         margin-right: 20px;
+      }
+   
    }
 
+  
 }
