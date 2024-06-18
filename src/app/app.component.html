@@ -1,35 +1,46 @@
+<nav class="navbar navbar-expand-lg fixed-top navs">
+  <a routerLink="/" class="navbar-brand ms-3 ">
+    <img src="assets/logo03.png" alt="sur logo" width="100%" height="100%" class="navs__img">
+  </a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse  offset-md-3  offset-lg-1 " id="navbarNavAltMarkup">
+    <div class="navbar-nav navs__wrap">
+      <ul class="navbar-nav">
+        <li className="nav-item">
+          <a routerLink="/" routerLinkActive="active" class="nav-link text-white navs__item">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/nosotros" routerLinkActive="active" class="nav-link  text-white navs__item">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/productos" routerLinkActive="active" class="nav-link text-white navs__item">Productos</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/cotizar" routerLinkActive="active" class="nav-link text-white navs__item">Cotizar</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/contactanos" routerLinkActive="active" class="nav-link text-white navs__item">Contáctanos</a>
+        </li>
+      </ul>
 
-  <nav class="navbar navbar-expand-lg  navs">
-    <a routerLink="/" class="navbar-brand ms-3 ">
-      <img src="https://www.eniun.com/wp-content/uploads/ENIUN@1x.png" alt="Eniun logo" width="74" height="33">
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-
-        <a routerLink="/" routerLinkActive="active" class="nav-link text-white navs__item">Inicio</a>
-        <a routerLink="/nosotros" routerLinkActive="active" class="nav-link  text-white navs__item">Nosotros</a>
-        <a routerLink="/productos" routerLinkActive="active" class="nav-link text-white navs__item">Productos</a>
-        <a routerLink="/ubicanos" routerLinkActive="active" class="nav-link text-white navs__item">Ubícanos</a>
-        <a routerLink="/cotizar" routerLinkActive="active" class="nav-link text-white navs__item">Cotizar</a>
-        <a routerLink="/contactanos" routerLinkActive="active" class="nav-link text-white navs__item">Contáctanos</a>
-
-      </div>
     </div>
-  </nav>
-
-  <div class="content">
-    <router-outlet></router-outlet>
   </div>
-  <div class="footer">
-    <h2>footer</h2>
+</nav>
+
+
+<router-outlet></router-outlet>
+<app-ubicanos></app-ubicanos>
+
+
+
+<section class="whatsapp">
+  <div class="d-flex justify-content-center align-items-center  whatsapp__item">
+    <a href="https://wa.me/988285366">
+      <img src="/assets/whatsapp-line.svg
+      " alt="whatsap " class=" whatsapp__img">
+    </a>
   </div>
-
-
-<a href="https://wa.me/988285366" target="_blank" class="whatsapp-float" data-toggle="tooltip" data-placement="left"
-  title="Hola">
-  <i class="fab fa-whatsapp whatsapp-icon"></i>
-</a>
+</section>

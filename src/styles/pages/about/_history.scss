@@ -1,0 +1,51 @@
+.history {
+    /*
+    
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.80)), url('/assets/fund/fondo1.jpg');
+    background-image: cover;
+    background-position: center;
+    width: 100%;
+    background-repeat: no-repeat;
+    */
+  //  background-color: #0f1523;
+    padding-bottom: 20px;
+    padding-top: 100px;
+    
+
+    @include responsive($lg) {
+    
+    background-color: #fff;
+
+    }
+
+   
+
+    &__img {
+        padding-top: 30px;
+        width: 296px;
+        min-width: 296px;
+        min-height: 296px;
+
+        @include responsive ($md) {
+            width: 670px;
+            height: 500px
+        }
+
+        @include responsive ($lg) {
+            padding-top: 10px;
+
+            width: 470px;
+            height: 300px
+        }
+
+    }
+    
+    &__text{
+       
+        color: #000;
+       
+    }
+    &__title{
+        color: #000;
+    }
+}

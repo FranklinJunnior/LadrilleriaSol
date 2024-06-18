@@ -1,21 +1,39 @@
-<div class="container mt-5">
-  <div class="text-center mb-4">
-    <h2>Te ofrecemos</h2>
-    <h3>Los Mejores Productos​</h3>
-    <p>Con tecnología brasilera y optimizada con el sistema Boliviano en cuanto a cocción y quemado.</p>
+<section class="hero">
+  <div class="container ">
+    <h3 class="hero__title">Construimos tu futuro​</h3>
+    <p class="d-block d-lg-none hero__text">Con tecnología brasilera y optimizada con el sistema Boliviano en cuanto a
+      cocción y quemado.
+    </p>
+    <p class="d-none d-lg-block hero__text">Con tecnología brasilera y optimizada <br> con el sistema Boliviano en
+      cuanto <br> a cocción y quemado.
+
   </div>
-  <div class="row">
-    <div class="col-md-6">
-      <img class="img-fluid img-hover" src="assets/imagenes/kingkong.png" alt="Ladrillos para Muro" [routerLink]="['/productos/ladrillos-para-muro']" style="height: 200px;">
-      <h5>
-        <a [routerLink]="['/productos/ladrillos-para-muro']"><strong>Ladrillos para Muro</strong></a>
-      </h5>
-    </div>
-    <div class="col-md-6">
-      <img class="img-fluid img-hover" src="assets/imagenes/techo10.png" alt="Ladrillos para Techo" [routerLink]="['/productos/ladrillos-para-techo']" style="height: 200px;">
-      <h5>
-        <a [routerLink]="['/productos/ladrillos-para-techo']"><strong>Ladrillos para Techo</strong></a>
-      </h5>
+</section>
+
+<section class="hero__service">
+  <div class="container">
+    <h3 class="hero__service-title">Te ofrecemos </h3>
+    <div class="row g-4">
+      <div class="col-12 col-lg-6">
+        <div class="card position-relative hero__service-wrap">
+          <img class="hero__service-img" src="assets/imagenes/kingkong.png" alt="Ladrillos para Muro"
+            [routerLink]="['/productos/ladrillos-para-muro']">
+          <h4 class="hero__service-subtitle">Ladrillos para Muro</h4>
+          <button [routerLink]="['/productos/ladrillos-para-muro']"
+            class="btn btn-sm hero__service-button">Ver producto</button>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-6">
+        <div class="card position-relative hero__service-wrap">
+          <img class=" hero__service-img" src="assets/imagenes/techo10.png" alt="Ladrillos para Techo"
+            [routerLink]="['/productos/ladrillos-para-techo']">
+            <h4 class="hero__service-subtitle">Ladrillos para Techo</h4>
+            <button [routerLink]="['/productos/ladrillos-para-techo']" class="btn btn-sm hero__service-button">Ver producto</button>
+       
+        </div>
+      </div>
     </div>
   </div>
-</div>
+
+</section>

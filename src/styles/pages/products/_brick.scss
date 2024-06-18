@@ -1,0 +1,64 @@
+.brick {
+    padding-top: 100px;
+
+    background-image: linear-gradient(90deg, rgba(225, 225, 225, 0.7), rgba(225, 225, 225, 0.60)), url('/assets/fund/back4.jpg');
+    background-image: cover;
+    background-position: center;
+    width: 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 70px;
+
+    &__wrapper {
+        border: 3px solid #252733;
+        width: 18rem;
+        border-radius: 10px;
+
+        @include responsive($lg) {
+            padding: 20px;
+            width: 24rem;
+            height: 26rem;
+          
+            
+        }
+
+        &-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 250px;
+            height: 250px;
+
+            @include responsive($lg) {
+                width: 340px;
+                height: 270px;
+            }
+        }
+
+
+
+        &-subtitle {
+            padding-top: 15px;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+
+        &-button {
+            background-color: #ef5e29;
+            color: #fff;
+
+            @include responsive($lg) {
+                padding: 7px;
+                font-size: 20px;
+                padding-left: 20px;
+                padding-right: 20px;
+              
+            }
+        }
+
+        &-button:hover {
+            background-color: #e16539;
+            color: #fff;
+
+        }
+    }
+}

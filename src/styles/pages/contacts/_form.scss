@@ -1,0 +1,108 @@
+.form {
+   padding-top: 150px;
+
+
+    @include responsive($md){
+        top: 25%;
+    }
+
+    @include responsive($lg){
+        padding-top: 150px;
+    }
+
+    &__item{
+        border: none;
+    }
+
+    &__wrap{
+        background-color:  #f3f8f7;
+        border-radius: 10px;
+
+        @include responsive($md){
+            padding: 20px;
+        }
+    }
+    
+    /* Primera columna */
+    &__wrapper {
+        border-color: none;
+        background-color: #f3f8f7;
+        border-radius: 20px;
+        border-width: 3px;
+        min-width: 30%;
+        min-height: 112%;
+        border: none;
+
+       
+        &-title {
+            padding-bottom: 20px;
+            padding-top: 20px;
+
+        }
+
+        &-line {
+            margin: 0px 30px 0px 20px;
+            margin-bottom: 0px;
+            border: 1px solid #216f62;
+        }
+
+        &-img {
+            margin: 20px 0px 0px 33px;
+            width: 35px;
+            height: 35px;
+            border-radius: 3px;
+            background-color: #2f3437;
+
+            @include responsive($lg){
+                width: 35px;
+                height: 35px;
+            }
+
+        }
+
+
+        &-subtitles {
+            flex-wrap: nowrap;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            margin-top: 21px;
+            margin-left: 0px;
+
+        }
+
+    }
+
+    /* Primera columna */
+
+    &__table {
+        border: none;
+        border-radius: 10px;
+        background-color: #f3f8f7;
+
+        @include responsive($sm){
+            height: 90%;
+        }
+    }
+
+    &__button {
+        background-color: #216f62;
+        border: none;
+        border-radius: 10px;
+        color: #ffffff;
+
+        @include responsive($lg){
+            height: 30%;
+            width: 30%;
+
+        }
+    }
+
+    &__button:hover {
+        background-color: #256a5f;
+        color: #ffffff;
+
+    }
+
+
+}

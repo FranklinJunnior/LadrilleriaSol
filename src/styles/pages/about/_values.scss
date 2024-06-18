@@ -1,0 +1,33 @@
+.values{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #f5f8fa;
+
+
+    &__wrap1{
+        background-color: #fff;
+        padding: 20px;
+        color: #000;
+        @include responsive($lg){
+            min-height: 253px
+        }
+    }
+
+    &__wraptwo{
+        background-color: #665e5e;
+        padding: 20px;
+        color: #fff;
+       
+        @include responsive($lg){
+            min-height: 253px
+        }
+
+    }
+    &__wrap3{
+        background-color: #cd6136;
+        padding: 20px;
+        color: #fff;
+        padding-bottom: 0px;
+     
+    }
+}

@@ -1,11 +1,6 @@
 .nav-link.active {
   font-weight: bold;
-  text-decoration: underline;
-}
-
-.img-fluid {
-  max-width: 100%;
-  height: auto;
+  background-color: #ff8c00;
 }
 
 .whatsapp-float {
@@ -27,70 +22,23 @@
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.whatsapp-icon {
-  color: #0a130c; /* Asegura que el ícono sea blanco */
-}
-
-.whatsapp-float:hover {
-  text-decoration: none;
-  color: #040805;
-  background-color: #FFF;
-  transform: scale(1.1);
-}
 
 
 
 
 
-/* Estilos para el contenido */
-.content {
 
-  padding: 3px 5px;
-  position: relative;
-  overflow-y: auto;
-}
 
-/* Estilos para el pie de página */
+
+
+
+/* Estilos para el pie de página 
 .footer {
   flex-shrink: 0;
   flex-grow: 0;
   background: #ff7402;
   width: 100%;
 }
-
-/* Estilos generales para párrafos */
-p {
-  font-family: Lato;
-}
-
-/* Estilos para los enlaces de navegación */
-nav a {
-  padding: 5px 10px;
-  text-decoration: none;
-  margin-top: 10px;
-  display: inline-block;
-  background-color: #ff9100;
-  border-radius: 4px;
-}
-
-/* Estilos para los enlaces visitados y no visitados */
-nav a:visited, a:link {
-  color: #ff8c00;
-}
-
-/* Estilos para los enlaces al pasar el cursor */
-nav a:hover {
-  color: #039be5;
-  background-color: #CFD8DC;
-}
-
-/* Estilos para el enlace activo */
-nav a.active {
-  color: #039be5;
-}
-
-
-
-
+*/
 
 

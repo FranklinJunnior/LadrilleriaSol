@@ -1,0 +1,183 @@
+.footer {
+    background-color: #252733;
+    padding-top: 30px;
+
+    &__wripper {
+        padding-top: 20px;
+        border-color: rgb(255, 167, 50.9);
+        background-color: #222531;
+        border-radius: 20px;
+        border-width: 3px;
+        min-width: 30%;
+        min-height: 110%;
+
+        @include responsive($lg) {
+           
+
+        }
+
+    }
+
+
+    &__title-line {
+        margin: 0px 30px 0px 20px;
+        margin-bottom: 0px;
+        border: 1px solid rgb(255, 167, 50.9);
+    }
+
+
+
+    /* primera columna*/
+
+    &__wripper-logo {
+        width: 250px;
+        height: 80px;
+        margin: 8% 40% 0% 6%;
+
+       
+        @include responsive($lg) {
+            width: 300px;
+            height: 100px;
+            margin: 0% 0% 0% 2%;
+        }
+
+       
+    }
+
+    &__wrapper-titlelogo {
+        color: #000;
+        margin: 8% 40% 0% 0%;
+        text-transform: uppercase;
+
+        @include responsive($sm) {
+            margin: 4% 76% 0% 0%;
+        }
+
+        @include responsive($md) {
+            margin: 5% 50% 0% 0%;
+        }
+
+        @include responsive($lg) {
+            margin: 8% 40% 0% 0%;
+        }
+
+    }
+
+    /* primera columna*/
+
+
+
+    &__wrapper-discripcion {
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 50px;
+        margin: 00px 20px;
+    }
+
+    &__wripper-items {
+        padding-top: 10px;
+        flex-wrap: nowrap;
+
+    }
+
+    &__redes-icons {
+        margin-right: 10px;
+
+    }
+
+
+    &__wrapper-img {
+        margin: 20px;
+        width: 35px;
+        height: 35px;
+        border-radius: 3px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: #000;
+        
+
+    }
+
+    &__wrapper-imgs {
+        margin: 20px 0px 0px 33px;
+        width: 35px;
+        height: 35px;
+        border-radius: 3px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: rgb(255, 167, 50.9);
+        
+
+    }
+
+
+    &__wripper-title {
+        padding-bottom: 20px;
+        padding-top: 20px;
+        color: #ffffff;
+        font-size: 20px;
+
+
+    }
+
+    &__wrapper-subtitle {
+        flex-wrap: nowrap;
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 13px;
+        margin-left: 6px;
+    }
+
+    &__wrapper-subtitles {
+        flex-wrap: nowrap;
+        color: #ffffff;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin-top: 21px;
+        margin-left: 0px;
+    }
+
+
+    &__items {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    /* Tercera columna */
+
+    &__siteweb-img {
+        margin: 20px 0px 4px 33px;
+        width: 30px;
+        height: 30px;
+        border-radius: 3px;
+        background-color: rgb(255, 167, 50.9);
+
+        &-name {
+            color: #ffffff;
+            text-decoration: none;
+            margin-top: 22px;
+            margin-left: 4px;
+
+        }
+
+        &-name:hover {
+            color: #000;
+        }
+
+    }
+
+    /* Tercera columna */
+}

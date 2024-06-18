@@ -1,0 +1,27 @@
+.brickwall {
+    padding-top: 100px;
+
+    &__wrapper {
+        padding-bottom: 20px;
+    }
+
+    &__button {
+        background-color: #ef5e29;
+        color: #fff;
+
+        @include responsive($lg) {
+            padding: 7px;
+            font-size: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+
+        }
+    }
+
+    &__button:hover {
+        background-color: #e16539;
+        color: #fff;
+
+    }
+
+}

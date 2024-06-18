@@ -1,28 +1,32 @@
-<!-- ladrillos-para-muro.component.html -->
-<h3>Ladrillos para Muro</h3>
-<div class="row">
-  <div class="col-md-4">
-    <div class="form-group">
-      <label for="kingKong">
-        <a routerLink="/productos/ladrillos-para-muro/king-kong">King Kong</a>
-      </label>
-      <a routerLink="/productos/ladrillos-para-muro/king-kong">
-        <img class="img-fluid img-hover"  src="assets/imagenes/kingkong.png" class="img-fluid" alt="King Kong 18 Huecos"style="height: 200px;">
-      </a>
+<section class="brickwall">
+  <div class="container">
+    <h3>Ladrillos para Muro</h3>
+    <div class="row g-5">
+      <div class="col-md-4">
+        <div class="card p-4 brickwall__wrapper">
+          <a routerLink="/productos/ladrillos-para-muro/king-kong">
+            <img class=" img-hover"  src="assets/imagenes/kingkong.png"  alt="King Kong 18 Huecos"style="height: 200px;">
+          </a>
+          <h4>King Kong</h4>
+            <button routerLink="/productos/ladrillos-para-muro/king-kong" class="btn btn-sm brickwall__button">Ver datalles</button>
+        </div>
+      </div>
+    
+      <div class="col-md-4">
+        <div class="form-group">
+          <label for="pandereta">
+            <a routerLink="/productos/ladrillos-para-muro/pandereta">Pandereta</a>
+          </label>
+          <a routerLink="/productos/ladrillos-para-muro/pandereta">
+            <img src="assets/imagenes/pandereta.png" class="img-fluid" alt="Pandereta Acanalada" style="height: 200px;">
+          </a>
+        </div>
+      </div>
     </div>
+    
   </div>
 
-  <div class="col-md-4">
-    <div class="form-group">
-      <label for="pandereta">
-        <a routerLink="/productos/ladrillos-para-muro/pandereta">Pandereta</a>
-      </label>
-      <a routerLink="/productos/ladrillos-para-muro/pandereta">
-        <img src="assets/imagenes/pandereta.png" class="img-fluid" alt="Pandereta Acanalada" style="height: 200px;">
-      </a>
-    </div>
-  </div>
-</div>
+</section>
 
 
 
