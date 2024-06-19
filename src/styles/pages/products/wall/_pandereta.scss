@@ -1,19 +1,18 @@
-.brickwall {
+.pandereta{
     padding-top: 100px;
-
-    &__wrapper {
-        padding-bottom: 20px;
-    }
+    padding-bottom: 20px;
 
     &__button {
         background-color: #ef5e29;
         color: #fff;
+        font-size: 20px;
 
         @include responsive($lg) {
             padding: 7px;
             font-size: 20px;
             padding-left: 20px;
             padding-right: 20px;
+
         }
     }
 
@@ -22,5 +21,4 @@
         color: #fff;
 
     }
-
 }

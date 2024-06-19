@@ -1,25 +1,30 @@
 .brick {
     padding-top: 100px;
-
-    background-image: linear-gradient(90deg, rgba(225, 225, 225, 0.7), rgba(225, 225, 225, 0.60)), url('/assets/fund/back4.jpg');
-    background-image: cover;
-    background-position: center;
-    width: 100%;
-    background-repeat: no-repeat;
     padding-bottom: 70px;
+    background-color: #fff;
+
+    &__category {
+        border-right: 2px solid #726f6f;
+        padding-right: 15px;
+    }
 
     &__wrapper {
-        border: 3px solid #252733;
-        width: 18rem;
+        border: 3px solid #48484b;
+        width: 19rem;
+        height: 23rem;
+       
         border-radius: 10px;
-
+      
         @include responsive($lg) {
             padding: 20px;
             width: 24rem;
             height: 26rem;
-          
-            
         }
+
+        &-item{
+            font-size: 18px;
+        }
+
 
         &-img {
             display: flex;
@@ -34,7 +39,22 @@
             }
         }
 
+        &-img:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s;
+        }
 
+
+        &-title {
+            font-size: 20px;
+
+            @include responsive($lg) {
+                font-size: 50px;
+                padding-top: 20px;
+                padding-bottom: 40px;
+              
+            }
+        }
 
         &-subtitle {
             padding-top: 15px;
@@ -45,13 +65,14 @@
         &-button {
             background-color: #ef5e29;
             color: #fff;
+           
 
             @include responsive($lg) {
                 padding: 7px;
                 font-size: 20px;
                 padding-left: 20px;
                 padding-right: 20px;
-              
+
             }
         }
 

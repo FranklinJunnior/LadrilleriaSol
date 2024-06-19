@@ -1,31 +1,42 @@
-<div class="brick">
+<section class="brick">
   <div class="container text-center">
-    <div class="text-center mb-4">
-      <h2>Nuestros Productos</h2>
-    </div>
+    <h2 class="brick__wrapper-title">Construyendo Sueños, Protegiendo Familias</h2>
     <div class="row">
-      <div class="col-12 col-lg-6">
-        <div class="brick__wrapper">
-          <img class="img-hover brick__wrapper-img" src="assets/imagenes/kingkong.png" alt="Ladrillos para Muro"
-            [routerLink]="['/productos/ladrillos-para-muro']">
-          <div class="brick__wrapper-group">
-            <h4 class="brick__wrapper-subtitle">Ladrillosa de Muro</h4>
-            <button [routerLink]="['/productos/ladrillos-para-muro']" class="btn  btn-sm brick__wrapper-button">Ver
-              más</button>
-          </div>
-
+      <div class="col-lg-2 d-none d-lg-block text-start brick__category">
+        <h4>Categoria</h4>
+        <div class="brick__wrapper-item">
+          <input type="radio" id="todos" name="categoria" value="Todos" (change)="seleccionarCategoria('Todos')" checked />
+          <label for="todos">Todos</label>
+        </div>
+        <div class="brick__wrapper-item">
+          <input type="radio" id="muro" name="categoria" value="muro" (change)="seleccionarCategoria('muro')" />
+          <label for="muro">Muro</label>
+        </div>
+        <div class="brick__wrapper-item">
+          <input type="radio" id="techo" name="categoria" value="techo" (change)="seleccionarCategoria('techo')" />
+          <label for="techo">Techo</label>
         </div>
       </div>
-      <div class="col-12 col-lg-6">
-        <div class="brick__wrapper">
-          <img class=" img-hover brick__wrapper-img" src="assets/imagenes/techo12.png" alt="Ladrillos para Techo"
-            [routerLink]="['/productos/ladrillos-para-techo']">
-            <h4 class="brick__wrapper-subtitle">Ladrillosa de Techo</h4>
-      
-            <button [routerLink]="['/productos/ladrillos-para-techo']" class="btn  btn-sm brick__wrapper-button">Ladrillos para Techo</button>
-        
+      <div class="col-lg-9 offset-lg-1">
+        <div class="row  mt-3 mb-4">
+          <div class="col-12">
+            <input type="text" class="form-control" placeholder="Buscar..." (input)="actualizarTerminoBusqueda($event)">
+
+          </div>
+        </div>
+
+        <div class="row g-5">
+          <div class="col-12 col-lg-6 mb-4" *ngFor="let producto of productosFiltrados">
+            <div class="brick__wrapper">
+              <img class="img-hover brick__wrapper-img" [src]="producto.imagen" [alt]="producto.nombre">
+              <div class="brick__wrapper-group">
+                <h4 class="brick__wrapper-subtitle">{{ producto.nombre }}</h4>
+                <button [routerLink]="producto.enlace" class="btn btn-sm brick__wrapper-button">Ver más</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+</section>

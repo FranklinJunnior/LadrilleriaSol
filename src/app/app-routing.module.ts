@@ -14,6 +14,7 @@ import { KingKongComponent } from './productos/ladrillos-para-muro/king-kong/kin
 import { PanderetaComponent } from './productos/ladrillos-para-muro/pandereta/pandereta.component';
 import { Techo10Component } from './productos/ladrillos-para-techo/techo10/techo10.component';
 import { Techo12Component } from './productos/ladrillos-para-techo/techo12/techo12.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 const routes: Routes = [
   { path: '', component: InicioComponent },
@@ -28,7 +29,8 @@ const routes: Routes = [
   { path: 'ubicanos', component: UbicanosComponent },
   { path: 'contactanos', component: ContactanosComponent },
   { path: 'cotizar', component: CotizarComponent },
-  { path: '**', redirectTo: '', pathMatch: 'full' }
+  { path: '**', redirectTo: '', pathMatch: 'full' },
+  { path: '**', component: NotFoundComponent   }
 ];
 
 @NgModule({
