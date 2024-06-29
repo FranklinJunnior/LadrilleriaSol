@@ -1,0 +1,9 @@
+.container {
+  margin-top: 100px; /* Ajusta este valor según sea necesario */
+}
+
+.detalle-imagen {
+  max-width: 50%; /* Ajusta al ancho máximo del contenedor */
+  height: auto; /* Mantiene la proporción de aspecto */
+  max-height: 100px; /* Establece una altura máxima deseada */
+}

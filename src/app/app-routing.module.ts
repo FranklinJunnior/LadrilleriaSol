@@ -15,6 +15,9 @@ import { PanderetaComponent } from './productos/ladrillos-para-muro/pandereta/pa
 import { Techo10Component } from './productos/ladrillos-para-techo/techo10/techo10.component';
 import { Techo12Component } from './productos/ladrillos-para-techo/techo12/techo12.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { PedidoDetalleComponent } from './pedido-detalle/pedido-detalle.component';
+
+
 
 const routes: Routes = [
   { path: '', component: InicioComponent },
@@ -27,6 +30,7 @@ const routes: Routes = [
   { path: 'productos/ladrillos-para-techo/techo10', component: Techo10Component },
   { path: 'productos/ladrillos-para-techo/techo12', component: Techo12Component },
   { path: 'ubicanos', component: UbicanosComponent },
+  { path: 'inicio/:opcion', component: PedidoDetalleComponent },
   { path: 'contactanos', component: ContactanosComponent },
   { path: 'cotizar', component: CotizarComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' },

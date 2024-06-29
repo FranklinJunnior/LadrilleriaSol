@@ -65,32 +65,43 @@
               </div>
 
 
-              <div class='col-12 col-md-6 col-lg-6'>
-                  <div class='card p-3 form__table'>
-                      <h4 class='d-flex justify-content-center align-items-center'>Formulario</h4>
-                      <form >
-                          <div class="form-group">
-                              <label for="email1"></label>
-                              <input type="text" class="form-control" id="email1" placeholder="Nombre" required />
-                          </div>
-                          <div class="form-group">
-                              <label for="email1"></label>
-                              <input type="email" class="form-control" id="email1" placeholder="Correo" required />
-                          </div>
-                          <div class="form-group ">
-                              <label for="telefono"></label>
-                              <input type="number" class="form-control" id="telefono" placeholder="Teléfono" required />
-                          </div>
-                          <div class="form-group mb-4">
-                              <label for="mensaje"></label>
-                              <textarea class="form-control" id="mensaje" rows="3" placeholder='¿Cómo te podemos ayudar?' ></textarea>
-                          </div>
-                          <div class='text-center '>
-                              <button type="submit" class="btn btn-lg  form__button">Enviar</button>
-                          </div>
-                      </form>
-                  </div>
+              <div class="col-12 col-md-6 col-lg-6">
+                <div class="card p-3 form__table">
+                  <h4 class="d-flex justify-content-center align-items-center">Formulario</h4>
+                  <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
+                    <div class="form-group">
+                      <label for="nombre">Nombre</label>
+                      <input type="text" class="form-control" id="nombre" placeholder="Nombre" required ngModel name="nombre">
+                      <div *ngIf="contactForm.controls['nombre'].invalid && (contactForm.controls['nombre'].dirty || contactForm.controls['nombre'].touched)" class="text-danger">
+                        Nombre es requerido.
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Correo</label>
+                      <input type="email" class="form-control" id="email" placeholder="Correo" required ngModel name="email">
+                      <div *ngIf="contactForm.controls['email'].invalid && (contactForm.controls['email'].dirty || contactForm.controls['email'].touched)" class="text-danger">
+                        Correo es requerido y debe ser válido.
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="telefono">Teléfono</label>
+                      <input type="tel" class="form-control" id="telefono" placeholder="Teléfono" required ngModel name="telefono">
+                      <div *ngIf="contactForm.controls['telefono'].invalid && (contactForm.controls['telefono'].dirty || contactForm.controls['telefono'].touched)" class="text-danger">
+                        Teléfono es requerido.
+                      </div>
+                    </div>
+                    <div class="form-group mb-4">
+                      <label for="mensaje">¿Cómo te podemos ayudar?</label>
+                      <textarea class="form-control" id="mensaje" rows="3" placeholder="Mensaje" ngModel name="mensaje"></textarea>
+                    </div>
+                    <div class="text-center">
+                      <button type="submit" class="btn btn-lg form__button">Enviar</button>
+                    </div>
+                  </form>
+                </div>
               </div>
+
+
           </div>
       </div>
   </div>

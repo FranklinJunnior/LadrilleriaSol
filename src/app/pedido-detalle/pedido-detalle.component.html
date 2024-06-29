@@ -1,0 +1,17 @@
+<div class="container text-center mt-5 pt-5">
+  <h2>Detalle del Pedido</h2>
+  <input type="number" [(ngModel)]="valorIngresado" placeholder="Ingresa una cantidad" class="form-control mb-3">
+  <button (click)="mostrarImagen()" class="btn btn-primary mb-3">¿Dónde lo Puedo Comprar?</button>
+
+  <div *ngIf="mensaje" class="alert alert-info">
+    {{ mensaje }}
+  </div>
+
+  <div *ngIf="imagenMostrar" class="mt-4">
+    <img [src]="imagenMostrar" alt="Imagen de la opción seleccionada" class="detalle-imagen">
+  </div>
+
+  <div class="text-center mt-3">
+    <button [routerLink]="['/productos']" class="btn btn-primary">Ver Productos</button>
+  </div>
+</div>

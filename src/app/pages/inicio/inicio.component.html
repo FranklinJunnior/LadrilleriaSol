@@ -1,3 +1,4 @@
+
 <section class="hero">
   <div class="container ">
     <h3 class="hero__title">Construimos tu futuro​</h3>
@@ -9,6 +10,40 @@
 
   </div>
 </section>
+
+
+
+
+<div class="container text-center">
+  <h2 class="pedidos__title pt-4 pb-2">Selecciona una Sede</h2>
+  <div class="row">
+    <div class="col-12 col-md-4 mb-4">
+      <div class="pedido-item">
+        <a [routerLink]="['/inicio', 'caracoto']">
+          <img src="assets/ciudades/caracoto.jpg" alt="Opción 1" class="img-fluid">
+          <p class="pedido-texto text-center">Caracoto</p>
+        </a>
+      </div>
+    </div>
+    <div class="col-12 col-md-4 mb-4">
+      <div class="pedido-item">
+        <a [routerLink]="['/inicio', 'sanmiguel']">
+          <img src="assets/ciudades/sanmiguel.jpg" alt="Opción 2" class="img-fluid">
+          <p class="pedido-texto text-center">San Miguel</p>
+        </a>
+      </div>
+    </div>
+    <div class="col-12 col-md-4 mb-4">
+      <div class="pedido-item">
+        <a [routerLink]="['/inicio', 'juliaca']">
+          <img src="assets/ciudades/juliaca.jpg" alt="Opción 3" class="img-fluid">
+          <p class="pedido-texto text-center">Juliaca</p>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <section class="hero__service">
   <div class="container">
@@ -30,7 +65,7 @@
             [routerLink]="['/productos/ladrillos-para-techo']">
             <h4 class="hero__service-subtitle">Ladrillos para Techo</h4>
             <button [routerLink]="['/productos/']" class="btn btn-sm hero__service-button">Ver producto</button>
-       
+
         </div>
       </div>
     </div>

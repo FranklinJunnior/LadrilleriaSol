@@ -19,6 +19,7 @@ import { PanderetaComponent } from './productos/ladrillos-para-muro/pandereta/pa
 import { Techo10Component } from './productos/ladrillos-para-techo/techo10/techo10.component';
 import { Techo12Component } from './productos/ladrillos-para-techo/techo12/techo12.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { PedidoDetalleComponent } from './pedido-detalle/pedido-detalle.component';
 
 
 @NgModule({
@@ -36,7 +37,9 @@ import { NotFoundComponent } from './not-found/not-found.component';
     PanderetaComponent,
     Techo10Component,
     Techo12Component,
-    NotFoundComponent
+    NotFoundComponent,
+    PedidoDetalleComponent,
+    PedidoDetalleComponent
   ],
   imports: [
     BrowserModule,
